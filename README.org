@@ -1,0 +1,3 @@
+* Latest entries
+
+- [[file:202211/20221129.org::Let Git for Windows use Pageant as SSH agent][20221129: Let Git for Windows use Pageant as SSH agent]]
