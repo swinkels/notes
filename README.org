@@ -1,5 +1,6 @@
 * Latest entries
 
+- [[file:2022/12/20221228.org][20221228]] - When I update version numbers
 - [[file:2022/12/20221226.org][20221226]] - GitHub fine-grained personal access tokens
 - [[file:2022/12/20221208.org][20221208]] - Git for Windows protocol error when using Pageant
 - [[file:2022/11/20221129.org][20221129]] - Let Git for Windows use Pageant as SSH agent
