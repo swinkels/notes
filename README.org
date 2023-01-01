@@ -1,5 +1,6 @@
 * Latest entries
 
+- [[file:2023/01/20230101.org][20230101]] - James Shore's "Testing without Mocks"
 - [[file:2022/12/20221228.org][20221228]] - When I update version numbers
 - [[file:2022/12/20221226.org][20221226]] - GitHub fine-grained personal access tokens
 - [[file:2022/12/20221208.org][20221208]] - Git for Windows protocol error when using Pageant
