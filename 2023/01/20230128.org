@@ -1,0 +1,42 @@
+* Fix "cannot open" error messages when using dash-docs
+
+In [[file:20230116.org][my note]] about [[https://github.com/dash-docs-el/helm-dash][helm-dash]], an Emacs package to access offline documentation
+provided by [[https://kapeli.com/dash][Dash]], I mentioned the ~*dash-docs-error*~ buffer opens with messages
+like this:
+#+begin_example
+cannot open: "''"
+
+cannot open: "''"
+
+cannot open: "''"
+
+cannot open: "''"
+----------------
+ HEY! This is dash-docs (sqlite) error logging. If you want to disable it, set `dash-docs-enable-debugging` to nil
+----------------
+#+end_example
+
+Some googling lead me to [[https://sqlite.org/forum/forumpost/577873aa57777b91][this thread]] on the SQLite forum about a change in
+behavior of command-line option ~--init~[fn:1]. For SQLite versions older than
+3.34.0, you would pass ~-init ""~. As of that version, SQLite reports the error
+that file ~""~ doesn't exist and you need to pass the null device instead. The
+helm-dash package still passes ~-init ""~ and hence the error messages.
+
+I've created a [[https://github.com/dash-docs-el/dash-docs/pull/18][GitHub pull request]] to the underlying Emacs package [[https://github.com/dash-docs-el/dash-docs/pull/18][dash-docs]] to
+pass the right ~-init~ option depending on the SQLite version. I have my doubts
+whether the pull request will be picked up as the [[https://github.com/dash-docs-el/helm-dash][dash-docs-el organization on
+GitHub]] seems to be light on activity. The dash-docs repo has [[https://github.com/dash-docs-el/dash-docs/issues/17][an issue]] from 22
+July 2022 that mentions the error messages, but it didn't get a reaction from
+the maintainer.
+
+When I prepared my pull request, I noticed the repo already had an [[https://github.com/dash-docs-el/dash-docs/pull/11][unmerged pull
+request]] for the issue :). Its implementation is similar to mine but much less
+elaborate: it always passes the null device regardless of SQLite version. Even
+before I found out about this pull request, I'd already thought about that as it
+makes the change trivial. If pre-3.34.0 SQLite versions also accept the null
+device, it's the way to go.
+
+** Footnotes
+
+[fn:1] The [[https://www.sqlite.org/changes.html][SQLite Release History page]] briefly mentions this change in behavior
+in the release notes for version 3.34.0.

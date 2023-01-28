@@ -1,5 +1,6 @@
 * Latest entries
 
+- [[file:2023/01/20230128.org][20230128]] - Fix "cannot open" error messages when using dash-docs
 - [[file:2023/01/20230116.org][20230116]] - Accessing offline API documentation from Emacs
 - [[file:2023/01/20230105.org][20230105]] - Error dialog about pythoncom39.dll in conda virtualenv
 - [[file:2023/01/20230104.org][20230104]] - Poetry dependency resolution and Python versions
