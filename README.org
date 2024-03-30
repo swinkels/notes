@@ -1,5 +1,6 @@
 * Latest entries
 
+- [[file:2024/03/24/20240324.org][20240324]] - Upgrading Spacemacs
 - [[file:2024/01/03/20240103.org][20240103]] - What makes a design object-oriented?
 - [[file:2023/12/20231217.org][20231217]] - Using older documentation with Dash
 - [[file:2023/11/20231128.org][20231128]] - Creating animated GIFs of a desktop area
