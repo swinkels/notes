@@ -1,6 +1,6 @@
 #+PROPERTY: header-args :eval never
 
-* Looking over the fence at Doom emacs                                :emacs:
+* Looking over the fence at Doom Emacs                                :emacs:
 
 In May of this year I decided to have a look at another Emacs starter kit[fn:1],
 [[https://github.com/doomemacs/doomemacs][Doom Emacs]]. It's not that I was dissatisfied with [[https://www.spacemacs.org/][Spacemacs]], which has been my
@@ -12,7 +12,7 @@ year ago now. Since then, issues I encountered may have been resolved and new
 ones may have been introduced. Also, part of what this note describes is from
 memory and I /will/ have forgotten some of the good *and* bad.
 
-* Things to like
+** Things to like
 
 First of all, the installation experience was great. You clone its repo and then
 run a script in that repo to download the third-party packages and compile them.
@@ -87,7 +87,7 @@ is to discover and set a value but I don't like how it stores them as one big
 pile of settings. This makes it hard to document why you set a variable in a
 certain way.
 
-* Things not to like
+** Things not to like
 
 Doom is a thin layer above the third-party packages that make up the Emacs
 ecosystem, even more so than Spacemacs. The drawback is that Spacemacs also
@@ -129,7 +129,7 @@ configure Emacs for terminal use but by default it wasn't active. vi command
 characters until the first space but actually leaves the space[fn:3]. Of course,
 there were my aforementioned issues with the Doom popup management system.
 
-* Other remarks
+** Other remarks
 
 Doom is known for its speed. Indeed, it starts up fast: a pristine Doom
 installation starts in 1.2 seconds on my main development machine. Its startup
@@ -152,7 +152,7 @@ parenthesis using ~s )~ whereas in Doom I have to use ~S )~. However it's
 Spacemacs that deviates from upstream packages [[https://github.com/emacs-evil/evil-surround][evil-surround]] and ultimately
 [[https://github.com/tpope/vim-surround][vim-surround]] by using the former keybinding.
 
-* Notes from May 2024
+** Notes from May 2024
 
 For archival purposes, this section contains the notes I made when I made my
 foray into Doom. These notes are incomplete: I encountered (and worked around)
@@ -161,12 +161,12 @@ up with [[file:20241228][here]].
 
 Finally, I used Doom Emacs commit hash 9620bb45 dated April 18, 2024.
 
-** Open TODOs
+*** Open TODOs
 
 - [ ] replace ~M w <number>~ by ~M-<number>~ to switch windows - more convenient
 - [ ] find replacement for ~M-V~ (and other Vertico bindings to toggle display mode) - Xfce hijacks ~M-V~
 
-** [2024-05-27 ma]
+*** [2024-05-27 ma]
 
 - [ ] Xfce uses keybinding for leader key in Evil insert mode
 
@@ -177,7 +177,7 @@ Doom, but in the end this did the trick:
 (setq doom-leader-alt "M-m")
 #+end_src
 
-** [2024-05-23 do]
+*** [2024-05-23 do]
 
 - [X] replace by ~C-:~ by ~SPC SPC~ - more convenient
 
@@ -207,7 +207,7 @@ should react to ESC. Its default value ~t~, which is set in variable
 ~+popup-default-parameters~, closes the popup. The popup rules for flycheck
 don't overrule this default.
 
-** [2024-05-20 ma]
+*** [2024-05-20 ma]
 
 - [X] disable automatic highlighting of current word in Python mode
 
@@ -301,7 +301,7 @@ after the comment about ~evil-terminal-cursor-changer~ being buggy. I tried
 ~tty~ and cursor switching seems to work nicely. Doom uses the version of
 ~evil-terminal-cursor-changer~ suggested earlier, so not the fork I used.
 
-* Closing (?) thoughts
+** Closing (?) thoughts
 
 I used Doom Emacs for several weeks "in production". It felt fresh, "close(r) to
 the metal", and I liked the different approach to completion and candidate
@@ -322,7 +322,7 @@ own config for years before I settled on Spacemacs. Well, a framework like
 Spacemacs provides me with a very solid base. I choose to spent my time on
 working with that base instead of building my own.
 
-* Footnotes
+** Footnotes
 
 [fn:1] I used to call this an "Emacs configuration" but it seems the term
        "starter kit" is the term to use.
