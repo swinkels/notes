@@ -38,7 +38,7 @@ About the issue, it's unresolved and ends with a question for pointers from
 June 2023. So it seems that downloading the other, older docsets is not an
 option for other clients.
 
-* Creating and installing docsets for older packages
+** Creating and installing docsets for older packages
 
 Fortunately you can build the docsets yourself thanks to the excellent [[https://github.com/hynek/doc2dash][doc2dash]]
 utility by Hynek Schlawack. For example, the following small script
@@ -72,7 +72,7 @@ directory. If you do something like ~doc2dash --name Python-3.9.7 .~, ~doc2dash~
 will also pick up the new HTML files that it just generated, again and again and
 again. This will result in really large directory trees...
 
-* Enabling docsets in Emacs
+** Enabling docsets in Emacs
 
 In note [[file:../02/20230226.org][20230226]] I describe how to configure a specific set of docsets for
 Python mode in Spacemacs. That approach is still valid but it specifies the same
