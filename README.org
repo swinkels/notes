@@ -1,11 +1,11 @@
 * Latest entries
 
-- [[file:2025/01/08/20250108.org][20250108]] - Spacemacs and ruff to sort Python imports on save
-- [[file:2024/12/28/20241228.org][20241228]] - Looking over the fence at Doom Emacs
-- [[file:2024/12/24/20241224.org][20241224]] - Using Emacs profiles side-by-side
-- [[file:2024/07/24/20240724.org][20240724]] - Use Guix to build & install an older Emacs version
-- [[file:2024/03/24/20240324.org][20240324]] - Upgrading Spacemacs
-- [[file:2024/01/03/20240103.org][20240103]] - What makes a design object-oriented?
+- [[file:2025/01/20250108.org][20250108]] - Spacemacs and ruff to sort Python imports on save
+- [[file:2024/12/20241228.org][20241228]] - Looking over the fence at Doom Emacs
+- [[file:2024/12/20241224.org][20241224]] - Using Emacs profiles side-by-side
+- [[file:2024/07/20240724.org][20240724]] - Use Guix to build & install an older Emacs version
+- [[file:2024/03/20240324.org][20240324]] - Upgrading Spacemacs
+- [[file:2024/01/20240103.org][20240103]] - What makes a design object-oriented?
 - [[file:2023/12/20231217.org][20231217]] - Using older documentation with Dash
 - [[file:2023/11/20231128.org][20231128]] - Creating animated GIFs of a desktop area
 - [[file:2023/10/20231029.org][20231029]] - Introducing pydor, an Emacs package to run doctests

@@ -6,7 +6,7 @@
 * Create DataFrame from string table                          :python:pandas:
 
 You can find the code for the ~read_table~ function mentioned in this note in
-subdirectory [[file:20230318-python][20230318-python]].
+subdirectory [[file:20230318][20230318]].
 
 The really handy Pandas function ~read_fwf~ creates a ~DataFrame~ from a
 fixed-width text table, for example:

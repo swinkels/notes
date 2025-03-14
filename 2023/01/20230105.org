@@ -9,7 +9,7 @@ this:
 (my-venv) C:\Users\Pieter\repos\my-venv>poetry cache list --help
 #+end_src
 
-[[file:20230105-poetry-error.png]]
+[[file:20230105/poetry-error.png]]
 
 So each Poetry command triggered a failing search for a specific procedure in a
 DLL in my /base/ conda environment. Some googling (and trial & error) lead me to

@@ -9,7 +9,7 @@ features and fix bugs, or contain changes to take into account features or bugs
 in the third-party packages. This means Spacemacs is coupled to the state of the
 most-recent third-party packages. As Boromir would tell you,
 
-[[file:you-do-not-simply-upgrade-spacemacs.jpg]]
+[[file:20240324/you-do-not-simply-upgrade-spacemacs.jpg]]
 
 To avoid any issues, I always update Spacemacs from scratch whenever I update
 Spacemacs. This means I have to update [[https://github.com/swinkels/spacemacs-config][my Spacemacs configuration]], and install

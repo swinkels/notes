@@ -5,7 +5,7 @@ test at point" and "run tests in current module". It lacks the functionality to
 run doctests so I wrote a small Emacs package for that: [[https://github.com/swinkels/pydor][pydor]], the Python
 doctest runner. The following animated GIF shows how it works in Spacemacs:
 
-[[./pydor-runs-doctests.gif]]
+[[file:20231029/pydor-runs-doctests.gif]]
 
 The Emacs package is implemented by an Emacs Lisp file to determine the location
 of the docstring at point and a Python file to load and run the doctests in that
