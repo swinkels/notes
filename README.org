@@ -1,5 +1,6 @@
 * Latest entries
 
+- [[file:2025/03/20250323.org][20250323]] - Automate a developer workflow in Emacs
 - [[file:2025/01/20250108.org][20250108]] - Spacemacs and ruff to sort Python imports on save
 - [[file:2024/12/20241228.org][20241228]] - Looking over the fence at Doom Emacs
 - [[file:2024/12/20241224.org][20241224]] - Using Emacs profiles side-by-side
